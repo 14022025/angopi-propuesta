@@ -133,6 +133,19 @@ h3{font-weight:600;font-size:20px;line-height:1.25;letter-spacing:-.005em}
 footer{margin-top:72px;padding:28px 0 56px;border-top:1px solid var(--linea)}
 footer p{max-width:780px}
 
+/* Fuentes */
+.ref{font-size:11px;line-height:0;margin-left:2px}.ref a{color:var(--detalle);text-decoration:none;font-weight:600}
+.nota a{color:var(--detalle)}
+html{scroll-padding-top:24px}
+.fuentes{list-style:decimal;margin:32px 0 0;padding:24px 28px 24px 48px;background:var(--gris);border-radius:22px}
+.fuentes li{padding:10px 0;color:var(--texto);border-top:1px solid var(--linea)}.fuentes li:first-child{border-top:0}
+.fuentes li::marker{color:var(--detalle);font-weight:600}.fuentes b{color:var(--tinta);font-weight:600}.fuentes a,.metodo a{color:var(--detalle)}
+.metodo,.terminos-todos{margin-top:16px;background:var(--gris);border-radius:22px;padding:28px}
+.metodo ul{margin-top:10px}.metodo li{padding:10px 0;border-top:1px solid var(--linea);color:var(--texto)}.metodo li b{color:var(--tinta);font-weight:600}
+.col3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:14px}.col3>div>b{font-weight:600}
+.terminos-todos .terminos li span{color:var(--tinta);font-weight:500}
+@media (max-width:800px){.col3{grid-template-columns:minmax(0,1fr)}.fuentes{padding:16px 20px 16px 38px}.metodo,.terminos-todos{padding:20px}}
+
 /* Entrada: bloques que suben 32 px y aparecen */
 .js .sube{opacity:0;transform:translateY(32px);transition:opacity .9s var(--curva),transform .9s var(--curva)}
 .js .sube.visto{opacity:1;transform:none}
@@ -203,27 +216,27 @@ footer p{max-width:780px}
   <div class="tres">
     <article class="razon sube">
       <h3>Personas</h3>
-      <div class="cifra"><span data-cuenta="23400">23.400</span><small>búsquedas al mes en Colombia</small></div>
+      <div class="cifra"><span data-cuenta="23400">23.400</span><small>búsquedas al mes en Colombia<sup class="ref"><a href="#fuentes">1</a></sup></small></div>
       <p>La mayor demanda. Aquí cabe el detalle que hoy está en tu web: cada seguro con lo que cubre y su forma de&nbsp;cotizar.</p>
       <ul class="terminos"><li><b>Seguro de vida</b>6.600</li><li><b>Seguro de viaje</b>5.400</li><li><b>Seguro de moto</b>3.600</li><li><b>Seguro todo riesgo</b>3.600</li></ul>
     </article>
     <article class="razon sube">
       <h3>Empresas</h3>
-      <div class="cifra"><span data-cuenta="4500">4.500</span><small>búsquedas al mes en Colombia</small></div>
+      <div class="cifra"><span data-cuenta="4500">4.500</span><small>búsquedas al mes en Colombia<sup class="ref"><a href="#fuentes">1,2</a></sup></small></div>
       <p>Quien llega tiene un contrato por firmar o una operación que cuidar. Necesita ver su caso y hablar con un&nbsp;asesor.</p>
       <ul class="terminos"><li><b>Póliza de responsabilidad civil</b>2.400</li><li><b>Seguros para empresas</b>1.000</li><li><b>Póliza de cumplimiento</b>590</li><li><b>Seguro de cumplimiento</b>210</li></ul>
     </article>
     <article class="razon sube">
       <h3>Arrendamiento</h3>
-      <div class="cifra"><span data-cuenta="4800">4.800</span><small>búsquedas al mes en Colombia</small></div>
+      <div class="cifra"><span data-cuenta="4800">4.800</span><small>búsquedas al mes en Colombia<sup class="ref"><a href="#fuentes">1</a></sup></small></div>
       <p>La más clara de las tres. Un solo producto, un lector propio y una acción distinta: aquí se cotiza en la misma&nbsp;página.</p>
       <ul class="terminos"><li><b>Seguro de arrendamiento SURA</b>1.900</li><li><b>Seguro de arrendamiento</b>1.600</li><li><b>Póliza de arrendamiento</b>1.300</li></ul>
     </article>
   </div>
-  <p class="nota fuente sube">Suma de las búsquedas de cada grupo, sin SOAT. Estimaciones de Semrush para Colombia, noviembre de 2026; sirven para priorizar y pueden&nbsp;cambiar.</p>
+  <p class="nota fuente sube">Fuente: Semrush, base de datos de Colombia, consultada el 4 de noviembre de 2026. Es el promedio mensual de los últimos 12 meses, sumado por grupo y sin SOAT. Cuenta búsquedas, no personas. <a href="#fuentes">Ver fuentes y&nbsp;método</a>.</p>
   <div class="afuera sube">
     <h3>Decidido: esto vive dentro de las cinco páginas</h3>
-    <div class="fila2"><b>SOAT</b><p>Compra directa desde Personas y desde la home. Es la búsqueda más grande (165.000 al mes), con una dificultad de 65 sobre 100 frente a 14 a 37 de los demás seguros, y ya se compra en línea desde tu&nbsp;portal.</p></div>
+    <div class="fila2"><b>SOAT</b><p>Compra directa desde Personas y desde la home. Es la búsqueda más grande (165.000 al mes<sup class="ref"><a href="#fuentes">1</a></sup>), con una dificultad de 65 sobre 100 frente a 14 a 37 de los demás seguros, y ya se compra en línea desde tu&nbsp;portal.</p></div>
     <div class="fila2"><b>Quiénes somos</b><p>Se cuenta en la home: Somos Angopi, Por qué elegir, Nuestra historia y&nbsp;Equipo.</p></div>
     <div class="fila2"><b>Formatos</b><p>Siguen en Recursos y gestiones, en la home, junto a los cotizadores en línea y los&nbsp;formularios.</p></div>
     <div class="fila2"><b>Siniestros</b><p>Se atienden desde Contacto: WhatsApp, teléfono y correo, con un asesor&nbsp;directo.</p></div>
@@ -292,7 +305,7 @@ footer p{max-width:780px}
     <div class="reng"><b>Celular</b><p><i>Hoy</i>El botón del menú se ve como un cuadro vacío. Datos, logo y carrusel llenan la primera&nbsp;pantalla.</p><p class="ya"><i>Así queda</i>Menú visible y la información clave desde el primer&nbsp;vistazo.</p></div>
     <div class="reng"><b>WhatsApp</b><p><i>Hoy</i>Dos números según la página: 301 363 1792 y 302 226&nbsp;8682.</p><p class="ya"><i>Así queda</i>Un solo número en toda la web, con el mensaje listo según el&nbsp;seguro.</p></div>
     <div class="reng"><b>Formularios</b><p><i>Hoy</i>La comprobación de los campos no carga, y el formulario no pide autorización de&nbsp;datos.</p><p class="ya"><i>Así queda</i>Lo mínimo por llenar, campos comprobados, autorización de datos y el mensaje listo en&nbsp;WhatsApp.</p></div>
-    <div class="reng"><b>Google</b><p><i>Hoy</i>El mismo título en seis de siete páginas y ninguna con descripción. Semrush registra a angopi.co en una sola búsqueda del top&nbsp;100.</p><p class="ya"><i>Así queda</i>Título y descripción por página, pensados para lo que la gente&nbsp;busca.</p></div>
+    <div class="reng"><b>Google</b><p><i>Hoy</i>El mismo título en seis de siete páginas y ninguna con descripción. Semrush registra a angopi.co en una sola búsqueda del top&nbsp;100<sup class="ref"><a href="#fuentes">3</a></sup>.</p><p class="ya"><i>Así queda</i>Título y descripción por página, pensados para lo que la gente&nbsp;busca.</p></div>
     <div class="reng"><b>Enlaces antiguos</b><p><i>Hoy</i>Las páginas viven en direcciones como spersonas.html y&nbsp;contact.html.</p><p class="ya"><i>Así queda</i>Cada dirección antigua lleva a su página&nbsp;nueva.</p></div>
   </div>
 </section>
@@ -397,8 +410,35 @@ footer p{max-width:780px}
   </div>
 </section>
 
+<section id="fuentes">
+  <span class="pill sube"><b>Fuentes</b><span>De dónde salen las cifras</span></span>
+  <h2 class="sube"><span class="g">Cada cifra,</span> con su&nbsp;fuente.</h2>
+  <ol class="fuentes sube">
+    <li><b>Búsquedas por grupo.</b> Semrush, Keyword Overview, base de datos de Colombia, consultada el 4 de noviembre de 2026. Semrush define el volumen como el promedio mensual de búsquedas de los últimos 12 meses (<a href="https://www.semrush.com/kb/683-what-is-search-volume-in-semrush" target="_blank" rel="noopener">qué es el volumen de búsqueda</a>). Lo volvimos a consultar con los datos de septiembre de 2026 y las cifras&nbsp;coincidieron.</li>
+    <li><b>Una aclaración en Empresas.</b> «Seguros para empresas» promedia 1.000 búsquedas al mes, pero casi todas se concentran en un solo mes del año. Sin ese término, el grupo suma&nbsp;3.500.</li>
+    <li><b>Posición de angopi.co.</b> Semrush, Organic Research, base de datos de Colombia, misma fecha. Muestra el top 100 de las palabras que Semrush&nbsp;sigue.</li>
+  </ol>
+  <div class="metodo sube">
+    <h3>Cómo leerlas</h3>
+    <ul>
+      <li><b>Son estimaciones.</b> Semrush las calcula con sus modelos a partir de varias fuentes de datos (<a href="https://www.semrush.com/free-tools/keyword-search-volume-checker/" target="_blank" rel="noopener">cómo lo hace</a>); Google no publica estas cifras&nbsp;exactas.</li>
+      <li><b>Son búsquedas, no personas.</b> Una misma persona puede buscar varias veces, y no todas llegarían a la&nbsp;web.</li>
+      <li><b>Son de toda Colombia.</b> No son solo de&nbsp;Barranquilla.</li>
+      <li><b>Sirven para priorizar.</b> Indican dónde hay demanda; no prometen visitas ni posiciones en&nbsp;Google.</li>
+    </ul>
+  </div>
+  <div class="terminos-todos sube">
+    <h3>Las búsquedas que sumamos</h3>
+    <div class="col3">
+      <div><b>Personas · 23.440</b><ul class="terminos"><li>Seguro de vida<span>6.600</span></li><li>Seguro de viaje<span>5.400</span></li><li>Seguro de moto<span>3.600</span></li><li>Seguro todo riesgo<span>3.600</span></li><li>Seguro para mascotas<span>1.900</span></li><li>Seguro de carro<span>1.300</span></li><li>Seguro de salud<span>590</span></li><li>Seguro de hogar<span>170</span></li><li>Seguro de auto<span>140</span></li><li>Seguro de bicicleta<span>140</span></li></ul></div>
+      <div><b>Empresas · 4.500</b><ul class="terminos"><li>Póliza de responsabilidad civil<span>2.400</span></li><li>Seguros para empresas<span>1.000</span></li><li>Póliza de cumplimiento<span>590</span></li><li>Seguro de cumplimiento<span>210</span></li><li>Seguro responsabilidad civil<span>110</span></li><li>Seguros para pymes<span>40</span></li><li>Seguro de carga<span>30</span></li><li>Seguro lucro cesante<span>30</span></li><li>Seguros empresariales<span>20</span></li><li>Seguro de transporte de mercancía<span>20</span></li><li>Responsabilidad civil profesional<span>20</span></li><li>Todo riesgo construcción<span>10</span></li><li>Seguros para empleados<span>10</span></li><li>Seguro para contratistas<span>10</span></li></ul></div>
+      <div><b>Arrendamiento · 4.800</b><ul class="terminos"><li>Seguro de arrendamiento SURA<span>1.900</span></li><li>Seguro de arrendamiento<span>1.600</span></li><li>Póliza de arrendamiento<span>1.300</span></li></ul></div>
+    </div>
+  </div>
+</section>
+
 <footer>
-  <p class="nota">Análisis hecho el 4 de noviembre de 2026 con la información pública de angopi.co y estimaciones de Semrush. No es una auditoría: las cifras pueden cambiar y las posiciones en Google dependen de muchos factores. Coberturas y condiciones las define cada&nbsp;aseguradora.</p>
+  <p class="nota">Análisis hecho el 4 de noviembre de 2026 con la información pública de angopi.co y las estimaciones de Semrush citadas arriba. No es una auditoría: las cifras pueden cambiar y las posiciones en Google dependen de muchos factores. Coberturas y condiciones las define cada&nbsp;aseguradora.</p>
 </footer>
 
 </div>
